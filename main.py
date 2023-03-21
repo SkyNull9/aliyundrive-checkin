@@ -37,7 +37,7 @@ if __name__ == '__main__':
         else:
             message_all = f'{message_all}签到失败，错误信息：{result.msg}\n'
 
-    title = '阿里云盘签到结果'
+    title = '阿里云盘签到结果如下'
     message_all = f'{title}\n{message_all}'
     message_all = re.sub('\n+','\n', message_all)
     if message_all.endswith('\n'): message_all = message_all[:-1]
